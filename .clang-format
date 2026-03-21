@@ -1,0 +1,89 @@
+# Use a base style. LLVM is a good starting point, but we'll customize it further.
+BasedOnStyle: LLVM
+
+# Set the number of spaces per indentation level.
+IndentWidth: 2
+
+# Align consecutive assignments, including member initializers.
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+
+# The maximum width of a line before it breaks.
+ColumnLimit: 150
+
+# Reflow comments too: re-wrap comment lines that exceed ColumnLimit (does not touch lines already under it).
+ReflowComments: Always
+
+# How to place braces.
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterCaseLabel: true
+  AfterFunction: true
+  AfterNamespace: false
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: true
+  BeforeElse: true
+  BeforeLambdaBody: true
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
+IndentExternBlock: NoIndent
+
+# Indent case labels in switch statements.
+IndentCaseLabels: true
+BreakTemplateDeclarations: Yes
+# Controls bin packing of function parameters.
+BinPackParameters: false
+BinPackArguments: false
+
+# Control how include blocks are sorted.
+IncludeBlocks: Preserve
+
+# Prevent wrapping of short functions into a single line.
+AllowShortFunctionsOnASingleLine: Empty
+
+# Always put the opening `{` of a control statement (if, for, etc.) on the same line.
+BreakBeforeBinaryOperators: None
+
+# Force function signatures to have their parameters on new lines if they exceed the ColumnLimit.
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+BreakConstructorInitializers: BeforeComma
+
+# Formatting for lambdas and inlined code blocks.
+LambdaBodyIndentation: Signature
+
+# Do not allow short if statements to stay on one line.
+AllowShortIfStatementsOnASingleLine: false
+
+# Align closing brackets on function arguments.
+AlignTrailingComments: true
+
+# Formatting for pointer and reference types.
+PointerAlignment: Left
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: true
+SpacesInParentheses: false
+SpaceBeforeSquareBrackets: false
+
+# Control how member initializer lists (in constructor initializers) are formatted.
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerIndentWidth: 4
+
+# Use spaces instead of tabs.
+UseTab: Never
+
+# Do not allow trailing whitespace.
+NamespaceIndentation: None
+
+AlignAfterOpenBracket: Align
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowAllArgumentsOnNextLine: false
+AlignEscapedNewlines: Left
+
+PenaltyReturnTypeOnItsOwnLine: 1000

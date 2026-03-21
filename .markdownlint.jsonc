@@ -1,0 +1,12 @@
+{
+  // Tables in this repo use the compact single-space style (one space of padding,
+  // pipes not vertically aligned) — the form editors emit on save and what every
+  // note already uses. MD060 defaults to requiring the padded "aligned" style,
+  // which would flag every table in the repo. Disable it to match the repo style.
+  "MD060": false,
+
+  // Line length: prose is wrapped ~80 by hand, but table rows, image links, and
+  // file-path links in list items can't be wrapped to any fixed column. MD013
+  // only ever fires on those unavoidable lines here, so turn it off.
+  "MD013": false
+}
