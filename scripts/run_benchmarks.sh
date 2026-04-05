@@ -24,8 +24,9 @@ BUILD=build
 declare -A CFG=(
   [sequential]="sequential_access|3|results/sequential/8acc_canonical.json|results/sequential/canonical.png||"
   [strided]="strided_access|3|results/strided/u8_stride64_1acc_canonical.json|results/strided/canonical.png||"
+  [pointer_chasing]="pointer_chasing|3|results/pointer_chasing/canonical.json|results/pointer_chasing/canonical.png||"
 )
-ORDER=(sequential strided)
+ORDER=(sequential strided pointer_chasing)
 
 COMMON="--benchmark_out_format=json"
 
