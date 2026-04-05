@@ -23,8 +23,9 @@ BUILD=build
 # name -> "binary|taskset-cores|out-json|out-png|run-flags|plot-flags"
 declare -A CFG=(
   [sequential]="sequential_access|3|results/sequential/8acc_canonical.json|results/sequential/canonical.png||"
+  [strided]="strided_access|3|results/strided/u8_stride64_1acc_canonical.json|results/strided/canonical.png||"
 )
-ORDER=(sequential)
+ORDER=(sequential strided)
 
 COMMON="--benchmark_out_format=json"
 
