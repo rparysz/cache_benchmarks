@@ -26,8 +26,9 @@ declare -A CFG=(
   [strided]="strided_access|3|results/strided/u8_stride64_1acc_canonical.json|results/strided/canonical.png||"
   [pointer_chasing]="pointer_chasing|3|results/pointer_chasing/canonical.json|results/pointer_chasing/canonical.png||"
   [aos_vs_soa]="aos_vs_soa|3|results/aos_vs_soa/v4_canonical.json|results/aos_vs_soa/v4_canonical.png||"
+  [false_sharing]="false_sharing|0-7|results/false_sharing/canonical.json|results/false_sharing/canonical.png|--benchmark_min_time=1.0s|"
 )
-ORDER=(sequential strided pointer_chasing aos_vs_soa)
+ORDER=(sequential strided pointer_chasing aos_vs_soa false_sharing)
 
 COMMON="--benchmark_out_format=json"
 

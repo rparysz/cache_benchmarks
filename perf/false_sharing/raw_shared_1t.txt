@@ -1,0 +1,29 @@
+2026-04-21T16:42:06+02:00
+Running ./build/false_sharing
+Run on (8 X 3699.9 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 256 KiB (x4)
+  L3 Unified 6144 KiB (x1)
+Load Average: 0.37, 0.63, 0.46
+-------------------------------------------------------------------------------------------
+Benchmark                                 Time             CPU   Iterations UserCounters...
+-------------------------------------------------------------------------------------------
+BM_RawShared/real_time/threads:1       1.81 ns         1.79 ns   1546721667 items_per_second=553.021M/s
+
+ Performance counter stats for './build/false_sharing --benchmark_filter=BM_RawShared/real_time/threads:1 --benchmark_min_time=2s':
+
+    16.967.144.929      cycles:u                                                                (66,67%)
+    15.956.400.049      instructions:u                                                          (83,34%)
+               165      mem_inst_retired.lock_loads:u                                           (83,32%)
+                 1      mem_load_l3_hit_retired.xsnp_hitm:u                                        (83,32%)
+                 0      mem_load_l3_hit_retired.xsnp_hit:u                                        (83,35%)
+             2.197      machine_clears.memory_ordering:u                                        (83,33%)
+
+       4,808203231 seconds time elapsed
+
+       4,741494000 seconds user
+       0,002966000 seconds sys
+
+
