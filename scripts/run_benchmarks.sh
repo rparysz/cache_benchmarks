@@ -27,8 +27,9 @@ declare -A CFG=(
   [pointer_chasing]="pointer_chasing|3|results/pointer_chasing/canonical.json|results/pointer_chasing/canonical.png||"
   [aos_vs_soa]="aos_vs_soa|3|results/aos_vs_soa/v4_canonical.json|results/aos_vs_soa/v4_canonical.png||"
   [false_sharing]="false_sharing|0-7|results/false_sharing/canonical.json|results/false_sharing/canonical.png|--benchmark_min_time=1.0s|"
+  [matrix_multiply]="matrix_multiply|3|results/matrix_multiply/canonical.json|results/matrix_multiply/canonical.png|--benchmark_repetitions=5 --benchmark_min_time=2s --benchmark_report_aggregates_only=true|"
 )
-ORDER=(sequential strided pointer_chasing aos_vs_soa false_sharing)
+ORDER=(sequential strided pointer_chasing aos_vs_soa false_sharing matrix_multiply)
 
 COMMON="--benchmark_out_format=json"
 
