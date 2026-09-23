@@ -36,6 +36,8 @@ add_executable(false_sharing src/false_sharing.cpp)
 
 add_executable(matrix_multiply src/matrix_multiply.cpp)
 
+add_executable(write_bandwidth src/write_bandwidth.cpp)
+
 set(ALL_TARGETS
     sequential_access
     strided_access
@@ -44,6 +46,7 @@ set(ALL_TARGETS
     aos_vs_soa_novec
     false_sharing
     matrix_multiply
+    write_bandwidth
 )
 
 foreach(target ${ALL_TARGETS})
