@@ -257,7 +257,7 @@ cache_benchmarks/
 │   ├── false_sharing/           # 4 variants × {1,2,4,8} threads
 │   ├── matrix_multiply/         # 5 variants, turbo + base-clock runs
 │   └── write_bandwidth/         # plain vs non-temporal store
-├── perf/                        # Linux `perf` tool output (perf stat dumps, flamegraphs)
+├── perf/                        # `perf stat` dumps for the false-sharing MESI analysis
 ├── scripts/                     # run_benchmarks.sh + plot generation (plot_results.py, ...)
 ├── CMakeLists.txt
 └── README.md                    # ← you are here
